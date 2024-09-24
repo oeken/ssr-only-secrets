@@ -17,7 +17,9 @@ export function getEncryptionKey(envVarName: string): Promise<CryptoKey> {
   }
   let parsed: JsonWebKey;
   try {
-    parsed = JSON.parse(encryption_key);
+    const buffer = Buffer.from(encryption_key, "base64");
+    const decodedKey = buffer.toString("utf8");
+    parsed = JSON.parse(decodedKey);
   } catch {
     throw new Error(
       "The environment variable " +
