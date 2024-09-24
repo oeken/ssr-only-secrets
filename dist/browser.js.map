@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/browser.ts"],"sourcesContent":["export async function readSSROnlySecret() {\n  return undefined;\n}\nexport function useSSROnlySecret() {\n  return undefined;\n}\n"],"mappings":";AAAA,eAAsB,oBAAoB;AACxC,SAAO;AACT;AACO,SAAS,mBAAmB;AACjC,SAAO;AACT;","names":[]}
